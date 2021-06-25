@@ -1,6 +1,6 @@
 {
   "name": "spectacle-docs",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Generate beautiful static API documentation from OpenAPI/Swagger 2.0 specifications",
   "preferGlobal": true,
   "bin": {
@@ -18,6 +18,9 @@
   },
   "engines": {
     "node": ">=8"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   },
   "keywords": [
     "openapi",
@@ -39,7 +42,7 @@
     "clarify": "^2.1.0",
     "commander": "*",
     "foundation-sites": "^6.5.0-rc.4",
-    "grunt": "^1.0.3",
+    "grunt": "^1.4.0",
     "grunt-compile-handlebars": "^2.0.2",
     "grunt-contrib-clean": "^2.0.0",
     "grunt-contrib-concat": "^1.0.1",
@@ -60,7 +63,7 @@
     "json-stable-stringify": "^1.0.1",
     "lodash": "^4.17.11",
     "marked": "^0.6.1",
-    "node-sass": "^4.14.1",
+    "node-sass": "^6.0.1",
     "sync-request": "^6.0.0",
     "tmp": "0.0.33",
     "trace": "^3.1.0"
@@ -68,5 +71,9 @@
   "devDependencies": {
     "chai": "^4.2.0",
     "mocha": "^5.2.0"
+  },
+  "resolutions": {
+    "minimatch": "^3.0.0",
+    "lodash.merge": "^4.0.0"
   }
 }
