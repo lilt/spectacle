@@ -1,4 +1,4 @@
-var cheerio = require('cheerio')
+var cheerio = require('cheerio').default
 var marked = require('marked')
 var highlight = require('highlight.js')
 var yaml = require('js-yaml')
