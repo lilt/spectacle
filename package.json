@@ -38,7 +38,7 @@
   "homepage": "https://sourcey.com/spectacle",
   "dependencies": {
     "bluebird": "^3.5.2",
-    "cheerio": "^1.0.0-rc.2",
+    "cheerio": "^1.0.0-rc.10",
     "clarify": "^2.1.0",
     "commander": "*",
     "foundation-sites": "^6.5.0-rc.4",
