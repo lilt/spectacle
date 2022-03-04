@@ -1,5 +1,5 @@
 {
-  "name": "@lilt/spectacle",
+  "name": "@lilt/spectacle-docs",
   "version": "1.6.0",
   "description": "Generate beautiful static API documentation from OpenAPI/Swagger 2.0 specifications",
   "preferGlobal": true,
