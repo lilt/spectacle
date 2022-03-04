@@ -67,37 +67,76 @@ paths:
             - 'write:cheeses'
             - 'read:cheeses'
     put:
-      tags:
-        - Cheese
-      summary: Update an existing cheese
-      description: ''
-      operationId: updateCheese
-      consumes:
-        - application/json
-        - application/xml
-      produces:
-        - application/xml
-        - application/json
-      parameters:
-        - in: body
-          name: body
-          description: Cheese object that needs to be updated
-          required: true
-          schema:
-            $ref: '#/definitions/Cheese'
-      responses:
-        '404':
-          description: Cheese not found
-          schema:
-            $ref: '#/definitions/NotFoundError'
-        '422':
-          description: Validation exception
-          schema:
-            $ref: '#/definitions/ValidationError'
-      security:
-        - cheesy_auth:
-            - 'write:cheeses'
-            - 'read:cheeses'
+      - tags:
+          - Cheese
+        summary: Update an existing cheese
+        description: ''
+        operationId: updateCheese
+        consumes:
+          - application/json
+          - application/xml
+        produces:
+          - application/xml
+          - application/json
+        parameters:
+          - in: body
+            name: body
+            description: Cheese object that needs to be updated
+            required: true
+            schema:
+              $ref: '#/definitions/Cheese'
+        responses:
+          '404':
+            description: Cheese not found
+            schema:
+              $ref: '#/definitions/NotFoundError'
+          '422':
+            description: Validation exception
+            schema:
+              $ref: '#/definitions/ValidationError'
+        security:
+          - cheesy_auth:
+              - 'write:cheeses'
+              - 'read:cheeses'
+      - tags:
+          - Cheese
+        summary: Update multiple existing cheeses
+        description: ''
+        operationId: updateCheeses
+        consumes:
+          - application/json
+          - application/xml
+        produces:
+          - application/xml
+          - application/json
+        parameters:
+          - in: body
+            name: body
+            description: Cheese objects that needs to be updated
+            required: true
+            schema:
+              type: array
+              items:
+                $ref: '#/definitions/Cheese'
+        responses:
+          '200':
+            description: Cheeses response
+            schema:
+              type: array
+              items:
+                $ref: '#/definitions/Cheese'
+          '404':
+            description: Cheese not found
+            schema:
+              $ref: '#/definitions/NotFoundError'
+          '422':
+            description: Validation exception
+            schema:
+              $ref: '#/definitions/ValidationError'
+        security:
+          - cheesy_auth:
+              - 'write:cheeses'
+              - 'read:cheeses'
   /cheeses/findByTags:
     get:
       tags:
