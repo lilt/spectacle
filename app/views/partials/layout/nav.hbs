@@ -29,7 +29,7 @@
         <ul>
           {{#each operations}}
             <li>
-              <a href="#operation-{{htmlId path}}-{{htmlId method}}">
+              <a href="#operation-{{htmlId path}}-{{htmlId method}}-{{htmlId summary}}">
                 {{#if summary}}
                   {{summary}}
                 {{else}}
@@ -49,7 +49,7 @@
         <ul> -->
           {{#each .}}
             <!-- <li> -->
-              <a href="#operation-{{htmlId path}}-{{htmlId method}}">
+              <a href="#operation-{{htmlId path}}-{{htmlId method}}-{{htmlId summary}}">
                 {{#if summary}}
                   {{summary}}
                 {{else}}
