@@ -7,3 +7,5 @@ node_modules
 .history
 .idea
 .npmrc
+.vscode
+.DS_Store
