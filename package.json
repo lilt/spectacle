@@ -1,6 +1,6 @@
 {
   "name": "@lilt/spectacle-docs",
-  "version": "1.6.2",
+  "version": "1.6.3",
   "description": "Generate beautiful static API documentation from OpenAPI/Swagger 2.0 specifications",
   "preferGlobal": true,
   "bin": {
@@ -43,9 +43,9 @@
     "coffeescript": "^2.5.1",
     "commander": "*",
     "foundation-sites": "^6.6.3",
-    "grunt": "^1.4.1",
+    "grunt": "^1.6.1",
     "grunt-compile-handlebars": "^2.0.2",
-    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-clean": "^2.0.1",
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-connect": "^3.0.0",
     "grunt-contrib-copy": "^1.0.0",
