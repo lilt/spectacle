@@ -75,9 +75,6 @@
   },
   "overrides": {
     "minimatch": "3.0.5",
-    "lodash.merge": "^4.0.0",
-    "chalk": {
-      "has-ansi": "5.0.1"
-    }
+    "lodash.merge": "^4.0.0"
   }
 }
