@@ -1,6 +1,6 @@
 {
   "name": "@lilt/spectacle-docs",
-  "version": "1.6.3",
+  "version": "1.6.6",
   "description": "Generate beautiful static API documentation from OpenAPI/Swagger 2.0 specifications",
   "preferGlobal": true,
   "bin": {
